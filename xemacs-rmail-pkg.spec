@@ -2,7 +2,7 @@ Summary:	An obsolete Emacs mailer
 Summary(pl):	An obsolete Emacs mailer
 Name:		xemacs-rmail-pkg
 %define 	srcname	rmail
-Version:	1.11
+Version:	1.12
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
