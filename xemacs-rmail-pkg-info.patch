@@ -1,0 +1,23 @@
+diff -Nur xemacs-rmail-pkg-1.11/man/rmail/rmail.texi xemacs-rmail-pkg-1.11.new/man/rmail/rmail.texi
+--- xemacs-rmail-pkg-1.11/man/rmail/rmail.texi	Mon Jun 15 07:48:21 1998
++++ xemacs-rmail-pkg-1.11.new/man/rmail/rmail.texi	Sun Mar 26 14:27:58 2000
+@@ -1,9 +1,17 @@
+ \input texinfo  @comment -*-Texinfo-*-
+-@setfilename ../info/rmail.info
++@setfilename ../../info/rmail.info
+ @settitle Rmail User's Manual
++
++@ifinfo
++@format
++@dircategory XEmacs Editor:
+ @direntry
+-* Rmail::      Emacs subsystem for reading and disposing of mail
++* Rmail: (rmail).                       Emacs subsystem for reading and disposing of mail
+ @end direntry
++@end format
++@end ifinfo
++
++
+ @iftex
+ @finalout
+ @end iftex
