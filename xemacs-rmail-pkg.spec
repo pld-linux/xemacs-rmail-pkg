@@ -1,14 +1,15 @@
 Summary:	An obsolete Emacs mailer
-Summary(pl):	An obsolete Emacs mailer
+Summary(pl):	Stary program pocztowy Emacsa
 Name:		xemacs-rmail-pkg
 %define 	srcname	rmail
 Version:	1.12
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
+Group(de):	Applikationen/Editors/Emacs
 Group(pl):	Aplikacje/Edytory/Emacs
 Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
-Patch0:		xemacs-rmail-pkg-info.patch
+Patch0:		%{name}-info.patch
 URL:		http://www.xemacs.org/
 BuildArch:	noarch
 Conflicts:	xemacs-sumo
@@ -38,8 +39,7 @@ cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 mv -f  $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info/*.info* $RPM_BUILD_ROOT%{_infodir}
 rm -fr $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info
 
-gzip -9nf $RPM_BUILD_ROOT%{_infodir}/*.info* \
-	lisp/rmail/ChangeLog 
+gzip -9nf lisp/rmail/ChangeLog 
 
 %clean
 rm -fr $RPM_BUILD_ROOT
