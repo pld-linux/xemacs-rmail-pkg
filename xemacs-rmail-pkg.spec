@@ -21,7 +21,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 An obsolete Emacs mailer.
 
-%description -l pl 
+%description -l pl
 Stary program pocztowy Emacsa.
 
 %prep
@@ -39,7 +39,7 @@ cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 mv -f  $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info/*.info* $RPM_BUILD_ROOT%{_infodir}
 rm -fr $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info
 
-gzip -9nf lisp/rmail/ChangeLog 
+gzip -9nf lisp/rmail/ChangeLog
 
 %clean
 rm -fr $RPM_BUILD_ROOT
