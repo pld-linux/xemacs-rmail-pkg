@@ -1,5 +1,5 @@
 Summary:	An obsolete Emacs mailer
-Summary(pl.UTF-8):   Stary program pocztowy Emacsa
+Summary(pl.UTF-8):	Stary program pocztowy Emacsa
 Name:		xemacs-rmail-pkg
 %define 	srcname	rmail
 Version:	1.14
