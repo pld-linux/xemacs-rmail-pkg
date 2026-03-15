@@ -2,14 +2,14 @@ Summary:	An obsolete Emacs mailer
 Summary(pl.UTF-8):	Stary program pocztowy Emacsa
 Name:		xemacs-rmail-pkg
 %define 	srcname	rmail
-Version:	1.14
-Release:	2
+Version:	1.16
+Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
-Source0:	http://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
-# Source0-md5:	4409fc7ff5134ff562ff1357a014a41b
+Source0:	http://ftp.xemacs.org/pub/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
+# Source0-md5:	fd9896b4e1fc430d63552873c04740bf
 Patch0:		%{name}-info.patch
-URL:		http://www.xemacs.org/
+URL:		https://www.xemacs.org/
 BuildRequires:	texinfo
 Requires:	xemacs
 Requires:	xemacs-apel-pkg
